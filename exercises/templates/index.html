@@ -9,5 +9,26 @@
 <body>
 	<h1>Gaming!</h1>
 	<p>it's fun , it's competitive , it doesn't make you sweat that much ,it's fun to play if you have no friends and if you have a ton of them </p>
+	prove many skills skills including</p>
+	<ul>
+		<li>faster reflexes</li>
+		<li>information about real l ife things</li>
+		<li>memory</li>
+		<li>creativity</li>
+		<li>surprisingly sight</li>
+	</ul>
+	{% if no_games ==True %}
+	    <p>i have no  games ! but these are the games that i'd like to buy</p>
+	{% else %}
+        <p>i have a lot of games! these are my favorite</p>
+    {% endif %}
+    <h2>games :</h2>
+    <ul>
+        {% for game in games %}
+        <li> {{game}} </li>
+        {% endfor %}
+     </ul>
+
+	<p></p>
 </body>
 </html>
